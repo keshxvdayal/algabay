@@ -1,0 +1,82 @@
+/* GENERAL BUTTON STYLING */
+.btn-5,
+.btn-5::after {
+    transition: all 0.3s;
+}
+
+.btn-5::before,
+.btn-5::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    /* Use inline-block for responsive behavior */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    /* Prevent line break on smaller screens */
+}
+
+.btn-5::after {
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transform-origin: top left;
+    width: 0;
+}
+
+.btn-5:hover::after {
+    width: 135%;
+}
+
+.btn-5:hover {
+    color: blueviolet;
+}
+
+.head {
+    font-size: 25px;
+}
+
+.tradingview-widget-container {
+    margin-top: 23px;
+    margin-bottom: -20px;
+}
+
+/* Media Queries for Responsive Styling */
+@media (max-width: 768px) {
+    .btn-5 {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-left: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .main-header {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-5 {
+        font-size: 12px;
+        padding: 6px 10px;
+        /* Further adjust padding for very small screens */
+    }
+}

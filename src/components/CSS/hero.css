@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.hero-section {
+    align-items: center;
+    text-align: center;
+}
+
+.btns-hero {
+    padding: 12px;
+    text-align: center;
+    position: relative;
+    border: 1px solid WHITE;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+
+.btns-hero:hover {
+    background-color: white;
+    color: black;
+}
+
+.image-chatbot {
+    border-radius: 20px;
+    margin-left: 44px;
+
+}
+
+.image {
+    border-radius: 20px;
+}
+
+/* Base styles for heading sections */
+.heading-section {
+    font-family: "Roboto", sans-serif;
+    font-size: 6.5rem;
+    /* Equivalent to 48px for responsive scaling */
+    margin-bottom: 20px;
+    /* Adjust spacing as needed */
+}
+
+.heading-section-2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 6rem;
+    /* Equivalent to 40px for responsive scaling */
+    margin-top: 20px;
+    /* Adjust spacing as needed */
+    margin-bottom: 15px;
+    /* Adjust spacing as needed */
+    color: rgb(209, 145, 255);
+}
+
+.footer {
+    margin-left: 160px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#chat-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#chat-history {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.user-message {
+    text-align: right;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.bot-message {
+    text-align: left;
+    padding: 10px;
+    background-color: #e0f0e0;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loader {
+    display: none;
+    /* Hide by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .heading-section {
+        font-size: 8.5rem;
+        margin-bottom: 0px;
+        /* Equivalent to 40px for smaller screens */
+    }
+
+    .heading-section-2 {
+        font-size: 6rem;
+        /* Equivalent to 32px for smaller screens */
+    }
+
+    .image-chatbot {
+        margin-left: 0px;
+    }
+
+    .spline {
+        display: none;
+    }
+
+    .footer {
+        margin-left: 50px;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading-section {
+        font-size: 3rem;
+        /* Equivalent to 32px for even smaller screens */
+    }
+
+    .heading-section-2 {
+        font-size: 3rem;
+        /* Equivalent to 29px for even smaller screens */
+    }
+}
