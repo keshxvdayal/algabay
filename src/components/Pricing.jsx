@@ -1,7 +1,7 @@
 import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
-import support from "../assets/new/Screenshot 2024-04-25 at 3.22.39 AM.png";
+import support from "../assets/new/partners.jpeg";
 import { MouseParallax } from "react-just-parallax";
 import "./CSS/hero.css";
 
